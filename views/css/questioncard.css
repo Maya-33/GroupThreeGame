@@ -55,11 +55,11 @@
 }
 
 .questioncard-correct-answer {
-    background-image: url(../images/correctImage.png);
+    background-image: url(../images/correctButton.png)!important;
 }
 
 .questioncard-wrong-answer {
-    background-image: url(../images/wrongImage.png);
+    background-image: url(../images/wrongButton.png)!important;
 }
 
 input[type="radio"] {

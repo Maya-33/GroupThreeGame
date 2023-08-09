@@ -1,0 +1,179 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.register-body {
+    background-image: url(../images/homePage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register-top-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: .5em 0;
+}
+
+.register-home-button {
+    border: 1px;
+    opacity: 0.9;
+    margin: 1em 1em 0;
+    font-weight: bold;
+    border-radius: 10px; 
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center  center;
+    color: white;
+}
+
+.register-top-container a:hover {
+    color: black;
+}
+
+.register-form-container {
+    background-color: rgba(234, 242, 243, 0.5); 
+    border-radius: 1em;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.5), 0px 4px 8px rgba(0, 0, 0, 0.5), 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.register-title-container {
+    text-align: center;
+    color: #2c2f35;
+}
+
+#form1 {
+    margin: .5em 2em 2em;
+    text-align: center;
+    border: 1px solid rgb(75, 72, 72);
+    border-radius: 5px;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.3), 0px 2px 6px rgba(0, 0, 0, 0.3), 0px 0px 6px rgba(0, 0, 0, 0.3);  /* Reduced the spread and blur of the shadow for a softer look */
+}
+
+#form1 input[type="email"] {
+    padding: .5em 4em;
+    margin: 2.2em 1.5em 0 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.1em;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.3), 0px 2px 6px rgba(0, 0, 0, 0.3), 0px 0px 6px rgba(0, 0, 0, 0.3);  /* Reduced the spread and blur of the shadow for a softer look */
+}
+
+#form1 input[type="text"] {
+    padding: .5em 4em;
+    margin: 2.2em 1.5em 0 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.1em;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.3), 0px 2px 6px rgba(0, 0, 0, 0.3), 0px 0px 6px rgba(0, 0, 0, 0.3);  /* Reduced the spread and blur of the shadow for a softer look */
+}
+
+#form1 input[type="password"] {
+    padding: .5em 4em;
+    margin: 1.4em 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.1em;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.3), 0px 2px 6px rgba(0, 0, 0, 0.3), 0px 0px 6px rgba(0, 0, 0, 0.3);  /* Reduced the spread and blur of the shadow for a softer look */
+}
+
+#form1 input[type="submit"] {
+    display: inline-block;
+    margin: 1em;
+    padding: .6em 1.5em;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+#form input[type="submit"]:hover {
+    background-color: #007bff;
+    color: #70ecf5;
+}
+
+
+.register-already-container {
+    margin: 0 2em 2em;
+    font-size: 1.2em;
+}
+
+.register-already-container a {
+    text-decoration: none;
+    color: rgb(66, 7, 64);
+}
+
+.register-already-container a:hover {
+    color: #70ecf5;
+}
+
+/* Footer CSS */
+.index-footer-container {
+    background: linear-gradient(288.66deg, #7E4AC7 0.94%, #576BB0 80.38%);
+    width: 100%;
+    padding: 1em;
+    color: #ffffff;
+    text-align: center;
+    left: 0;
+    opacity: 0.88;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.1em;
+  }
+  
+  /* Footer CSS */
+  .index-footer-container span {
+    margin: 0 1em; 
+  }
+  
+  /* Footer CSS */
+  .index-footer-container a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1em;
+  }
+  
+  /* Footer CSS */
+  .index-footer-container a:hover {
+    color: #70ecf5;  
+    margin: 0 1em; 
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+  
+      
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+  
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+  
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+  
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) { 
+  
+  } 

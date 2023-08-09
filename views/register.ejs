@@ -2,13 +2,8 @@
 <html>
 <head>
 	<title>Registration</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="./css/main.css">
-
-
+	<link rel="stylesheet" href="./css/register.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 
@@ -38,31 +33,36 @@
 		});
 	</script>
 </head>
-<body>
-
-	<div class="col-md-4 col-md-offset-4">
+<body class="register-body">
+	<div class="register-top-container">
+		<a href="/" class="register-home-button">GO TO HOME PAGE</a>
+	</div>
+	<div class="register-form-container">
+		<div class="register-title-container">
+			<h2>REGISTER</h2>
+		</div>
+		<form id="form1" method="post">
+			<input type="email" name="email" placeholder="E-mail" required><br/>
+			<input type="text" name="username" placeholder="Username" required><br/>
+			<input type="password" name="password" placeholder="Password" required><br/>
+			<input type="password" name="passwordConf" placeholder="Confirm Password" required><br/>
+			<input type="submit" value="Register">
+		</form>
 		<div>
-			<p>Register Now
-			</p>
-		</div>
-		<div class="form-group">
-			<form id="form1" method="post">
-				<input type="email" name="email" placeholder="E-mail" required="" class="form-control"><br/>
-				<input type="text" name="username" placeholder="Username" required="" class="form-control"><br/>
-				<input type="password" name="password" placeholder="Password" required="" class="form-control"><br/>
-				<input type="password" name="passwordConf" placeholder="Confirm Password" required="" class="form-control"><br/>
-				<input type="submit" value="Register" class="btn btn-success">
-			</form>
-		</div>
-		
-		<div class="mssg bg-danger">
 			<span id="check"></span>
-		</div>
-		<div>
-			<span>Already Registered! <a href="/login">Login</a></span>
 		</div>
 		<div id="LangTable"><a href="/login" id="aa"></a>
 		</div>
+		<div class="register-already-container">
+			<span>Already Registered! <a href="/login">Login</a></span>
+		</div>
+	</div>
+	<div class="index-footer-container">
+		<span>© 2023 All rights reserved</span>
+		<span>|</span>
+		<a href="https://group3project.com/team/" target="_blank">Meet the Team</a>
+		<span>|</span>
+		<a href="https://group3project.com/" target="_blank">Contact Us</a>
 	</div>
 </body>
 </html>

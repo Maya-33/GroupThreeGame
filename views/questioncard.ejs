@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Quiz Question</title>
+    <title>Trivia Question</title>
     <link rel="stylesheet" href="css/questioncard.css">
 </head>
 <body class="questioncard-page-container">
@@ -24,7 +24,7 @@
         <div class="questioncard-answers-container">
           <% question.options.forEach((option, index) => { %>
             <label class="questioncard-option" for="option<%= index %>">
-              <input type="radio" id="option<%= index %>" name="answer" value="<%= index %>">
+              <input type="radio" id="option<%= index %>" name="answer" value="<%= index %>"> 
               <%= option %></label> 
           <% }) %>
         </div>
