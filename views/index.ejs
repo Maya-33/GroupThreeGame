@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="index-body">
+    <div class="index-banner">
+        <span id="typingText"></span>
+    </div>
+    <div class="index-button-container">
+        <a href="/login" class="index-logreg-button">PLAY WEB GAME</a>
+        <a href="/download" class="index-play-button">PLAY DESKTOP GAME</a>
+    </div>
+    <div class="index-footer-container">
+        <span>© 2023 All rights reserved</span>
+        <span>|</span>
+        <a href="https://group3project.com/team/" target="_blank">Meet the Team</a>
+        <span>|</span>
+        <a href="https://group3project.com/" target="_blank">Contact Us</a>
+    </div>
+    <script>
+        const originalText = "WELCOME TO TRIVIAGPT! PLAY, SCORE, AND SAVE! 🚀 YOU CAN PLAY THE WEB OR DESKTOP VERSION.  LOGIN/REGISTER FOR WEB PLAY OR DOWNLOAD FOR DESKTOP PLAY! 🎮";
+        let text = "";
+        let index = 0;
+
+        const typingTextElement = document.getElementById('typingText');
+
+        const timerId = setInterval(() => {
+            if (index < originalText.length) {
+                text += originalText.charAt(index);
+                typingTextElement.innerText = text;
+                index++;
+            } else {
+                clearInterval(timerId);
+            }
+        }, 50);
+
+        window.addEventListener('unload', () => {
+            clearInterval(timerId);
+        });
+    </script>  
+</body>
+</html>

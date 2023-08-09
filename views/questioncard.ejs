@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Question</title>
+    <link rel="stylesheet" href="css/questioncard.css">
+</head>
+<body class="questioncard-page-container">
+  <div class="questioncard-container">
+    <div class="questioncard-top-container">
+      <div class="questioncard-score-container">
+        <h2>Score: <%= score %></h2>
+      </div>
+      <% if (successMessage) { %>
+        <div class="questioncard-success-container">
+          <h2><%= successMessage %></h2>
+        </div>
+      <% } %>
+    </div>
+    <div class="questioncard-form-container">
+      <form method="POST" action="/next">
+        <div class="questioncard-question-container">
+          <%= question.question %>
+        </div>
+        <div class="questioncard-answers-container">
+          <% question.options.forEach((option, index) => { %>
+            <label class="questioncard-option" for="option<%= index %>">
+              <input type="radio" id="option<%= index %>" name="answer" value="<%= index %>">
+              <%= option %></label> 
+          <% }) %>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>document.addEventListener('DOMContentLoaded', function() {
+    const radios = document.querySelectorAll('input[type="radio"]');
+
+    radios.forEach((radio) => {
+        radio.addEventListener('change', function() {
+            this.form.submit(); 
+            radios.forEach(r => r.disabled = true);
+        });
+    });
+});
+</script>
+</body>
+</html>

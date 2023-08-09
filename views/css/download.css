@@ -1,0 +1,70 @@
+.download-body {
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center  center;
+    color: white;
+    background-image: url(../images/gameover.jpg);   
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.download-button-container {
+    background-image: url(../images/downloadButton.png); 
+
+}
+
+.index-footer-container {
+    background: linear-gradient(288.66deg, #7E4AC7 0.94%, #576BB0 80.38%);
+    width: 100%;
+    padding: 1em;
+    color: #ffffff;
+    text-align: center;
+    left: 0;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+  }
+  
+  .index-footer-container span {
+    margin: 0 1em; 
+  }
+  
+  .index-footer-container a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1em;
+  }
+  
+  .index-footer-container a:hover {
+    color: #70ecf5;  
+    margin: 0 1em; 
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+  
+      
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+  
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+  
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+  
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) { 
+  
+  } 

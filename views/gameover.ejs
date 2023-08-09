@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GAME OVER PAGE</title>
+    <link rel="stylesheet" href="css/gameover.css">
+</head>
+
+<body class="gameover-page-container">
+    <div class="gameover-top-container">
+        <a href="/profile" class="gameover-profile-button">GO TO PROFILE</a>
+        <a href="/logout" class="gameover-logout-button">LOGOUT</a>
+    </div>
+    <% if (finished) { %>
+        <div class="gameover-complete-container">
+            <p>Congratulations, you've</p>
+            <p>Answered all the questions!</p>
+            <p>You scored <%= score %> out of 10.</p>
+        </div>
+    <% } else { %>
+        <div class="gameover-wrong-container">
+            <p>Game Over</p>
+            <p>Wrong answer. You scored <%= score %>.</p>
+        </div>
+    <% } %> 
+    <div>
+        <a href="/category" class="gameover-play-button">PLAY AGAIN</a>
+    </div>
+</body>
+</html>
